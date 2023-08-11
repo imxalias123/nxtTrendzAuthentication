@@ -1,0 +1,93 @@
+/* Write your CSS code here */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'roboto';
+}
+.website-logo {
+  width: 170px;
+}
+.website-login {
+  width: 300px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.username-flex {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.password-flex {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.label {
+  color: #1e293b;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.input {
+  border-radius: 5px;
+  height: 35px;
+  border: 0px;
+  background-color: #d7dfe9;
+  padding-left: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+form {
+  width: 100%;
+  padding: 20px;
+}
+.login {
+  width: 100%;
+  color: #ffffff;
+  background-color: #0b69ff;
+  font-size: 15px;
+  border: 0px;
+  border-radius: 6px;
+  height: 35px;
+}
+.website-large-login {
+  display: none;
+}
+.website-large-logo {
+  display: none;
+}
+@media (min-width: 768px) {
+  .website-login {
+    display: none;
+  }
+  form {
+    width: 300px;
+    box-shadow: 0pc 4px 16px 0px #bfbfbf;
+    height: auto;
+    border-radius: 5px;
+    padding: 50px;
+  }
+  .login-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .website-large-login {
+    display: flex;
+    width: 600px;
+  }
+  .website-large-logo {
+    display: flex;
+    width: 200px;
+
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .website-logo {
+    display: none;
+  }
+}

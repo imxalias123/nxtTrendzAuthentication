@@ -1,0 +1,55 @@
+/* Write your CSS code here */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'roboto';
+  padding: 30px;
+}
+.heading {
+  font-size: 25px;
+  text-align: center;
+}
+.home-img {
+  width: 180px;
+}
+.home-description {
+  text-align: center;
+  color: #0b69ff;
+  font-size: 15px;
+}
+.home-btn {
+  color: #ffffff;
+  background-color: #0967d2;
+  border: 0px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+}
+@media (min-width: 768px) {
+  .home-img {
+    display: none;
+  }
+  .flex-home {
+    display: flex;
+    justify-content: space-between;
+  }
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: 'roboto';
+    padding: 40px;
+    width: 40%;
+  }
+  .home-description {
+    text-align: start;
+    color: #0b69ff;
+    font-size: 15px;
+  }
+  .home-lg-img {
+    width: 500px;
+  }
+}
