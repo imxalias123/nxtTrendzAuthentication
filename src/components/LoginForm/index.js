@@ -18,7 +18,7 @@ class LoginForm extends Component {
     this.setState({password: event.target.value})
   }
 
-  onSubmitSuccess = () => {
+  submitSuccess = () => {
     const {history} = this.props
     history.replace('/')
   }
@@ -115,8 +115,7 @@ class LoginForm extends Component {
           <button type="submit" className="login">
             Login
           </button>
-          {showErrorMsg ? <p>{errMsg}</p> : ''}
-          <p>{errMsg}</p>
+          {showErrorMsg && <p>{errMsg}</p>}
         </form>
       </div>
     )
